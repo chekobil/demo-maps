@@ -1,0 +1,9 @@
+#map {
+  width: 90vw;
+  height: 80vh;
+}
+@media (max-width: 600px) {
+  #map {
+    width: 98vw;
+  }
+}
