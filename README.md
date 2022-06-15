@@ -7,9 +7,10 @@
 - [x] Create a simple Map, centered in Madrid
 - [x] Map component, set initial options with props
 - [x] Add a search input and make it reactive
-- [] Connect the search input to Google API and show suggestions
-- [] Highlight user input text in the suggestions
-- [] Put a Marker on the map when the user selects one option
+- [x] Connect the search input to Google API and show suggestions
+- [x] Highlight user input text in the suggestions
+- [x] Put a Marker on the map when the user selects one option
+- [] Save Selections in History
 
 ## REQUIREMENTS
 
