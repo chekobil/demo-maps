@@ -3,12 +3,13 @@ import apiKey from "../secrets/google-maps-api";
 import { Loader } from "@googlemaps/js-api-loader";
 
 let map: google.maps.Map;
-const mapOptions = {
-  center: { lat: 40.4167754, lng: -3.7037902 },
-  zoom: 12,
-};
+interface PropsType {
+  center: { lat: number; lng: number };
+  zoom: number;
+}
 
-function Map() {
+function Map(props: PropsType) {
+  const mapOptions = { ...props };
   const loader = new Loader({
     apiKey: apiKey,
     version: "weekly",
@@ -21,6 +22,7 @@ function Map() {
       mapOptions
     );
   });
+
   return <div id="map"></div>;
 }
 
